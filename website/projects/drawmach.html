@@ -1,0 +1,36 @@
+{% extends "template.html" %}
+
+{% block title %} Pender Designs {% endblock %}
+
+
+{% block intro %}
+<h1> Drawing Machine </h1>
+<p> Drawing machine, powered by Arduino and a CNC shield v3.0 powering 2 LONGRUNER Nema 17 stepper motors. </p>
+{% endblock %}
+
+
+{% block main %}
+
+<article class="post featured">
+	<header>
+		<span class="date">September 16, 2021</span>
+		<h2>Drawing Machine</h2>
+	</header>
+	<p>
+		Drawing machine, powered by Arduino and a CNC shield v3.0 powering 2 LONGRUNER Nema 17 stepper motors.
+	</p>
+	<img style='height: 100%; width: 80%; object-fit: contain' src="static/images/drawmach/topdown.jpg" alt="" />
+	<h3>Design process</h3>
+	<p>
+		Like with many of my projects, I research the parts required, then purchase the parts that I cant make myself.
+		I then search for the parts CAD files on the internet or create them myself and design the fittings and attachments to them.
+		For the arrangement of linear rails and stepper motors, I decided to use a H shape belt which meant the moving frame was as light
+		as possible, meaning it could move a lot faster. This design was partly inspired by the youtuber StuffMadeHere in his <a href="https://youtu.be/myO8fxhDRW0">video</a>
+		I had to make 3D files of all the parts except the Arduino in the renders seen below.
+	</p>
+	<img style='height: 100%; width: 100%; object-fit: contain' src="static/images/drawmach/topdownrender.jpg" alt="" /></a>
+
+
+</article>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+
+{% block title %} Pender Designs {% endblock %}
+
+
+{% block content %}
+
+<div id="wrapper" class="fade-in">
+    <!-- Intro -->
+    <div id="intro">
+        {% block intro %} {% endblock %}
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <h1 href="/home" class="logo"> {% block header %} Pender Designs {% endblock %} </h1>
+    </header>
+
+    {% block nav %}
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li class="active"><a href="/home">Projects</a></li>
+            <li><a href="/aboutme">About me</a></li>
+            <!-- <li><a href="elements.html">More Information</a></li> -->
+        </ul>
+        <ul class="icons">
+            <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>  -->
+            <!--  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>  -->
+            <li><a href="https://www.instagram.com/penderdesigns/?hl=en" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://github.com/lpender3672" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/louis-pender-5a723b1a1/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+    </nav>
+    {% endblock %}
+
+
+    <!-- Main -->
+    <div id="main">
+        {% block main %} {% endblock %}
+    </div>
+
+    {% block footer %}
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <form method="post" action="https://formsubmit.co/1a28088e2f5ecd4ad9a4f5109b4ca37e">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                </ul>
+            </form>
+        </section>
+        <section class="split contact">
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto: louis@penderdesigns.com">louis@penderdesigns.com</a></p>
+            </section>
+            <section>
+                <h3>Phone</h3>
+                <p><a href="tel: +44 7488318744">+44 7488318744</a></p>
+            </section>
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>  -->
+                    <!--  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>  -->
+                    <li><a href="https://www.instagram.com/penderdesigns/?hl=en" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/lpender3672" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/louis-pender-5a723b1a1/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+    {% endblock %}
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul><li>&copy; PenderDesigns</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+
+</div>
+
+{% endblock %}

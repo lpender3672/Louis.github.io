@@ -1,0 +1,125 @@
+{% extends "fade_template.html" %}
+
+{% block title %} Pender Designs {% endblock %}
+
+
+{% block intro %} 
+
+<h1>Louis Pender</h1>
+<p>Engineering student at Cambridge University with an interest in robotics, programming and fluid mechanics</a>.</p>
+<p>Scroll down to see some of my projects</a>.</p>
+<ul class="actions">
+	<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+</ul>
+{% endblock %}
+
+
+
+
+{% block header %} Pender Designs {% endblock %}
+
+{% block main %}
+
+<!-- Featured Post -->
+<article class="post featured">
+	<header class="major">
+		<span class="date">April 10, 2022</span>
+		<h2><a href="#"> My Projects </a></h2>
+		<p>Website is currently in development.</p>
+		<p> as of right now more information about my projects can be found on my <a href="https://www.instagram.com/penderdesigns/"> Instagram</a></p>
+		<p>More projects and their full posts will be uploaded soon</p>
+	</header>
+		<ul class="actions special">
+		<li><a href="aboutme" class="button large">About me</a></li>
+	</ul>
+</article>
+
+<!-- Posts -->
+<section class="posts">
+	<article>
+		<header>
+			<span class="date">Feburary 24, 2022</span>
+			<h2><a href="projects/truss">Cantilever Truss</a></h2>
+		</header>
+		<a href="projects/truss" class="image fit"><img src="static/images/truss/truss1.jpeg" alt="" /></a>
+		<p>My lab partner and I designed, constructed and tested a cantilever truss made out of aluminium angle iron, plates and rivets.</p>
+		<ul class="actions special">
+			<li><a href="projects/truss" class="button">Read More</a></li>
+		</ul>
+	</article>
+		<article>
+		<header>
+			<span class="date">September 16, 2021</span>
+			<h2><a href="projects/drawmach">2D Drawing Machine</a></h2>
+		</header>
+		<a href="projects/drawmach" class="image fit"><img src="static/images/drawmach/topdown.jpg" alt="" /></a>
+		<p>2D drawing machine powered by 2 stepper motors. Arduino interprets GCODE instructions sent over serial from a tool path file produced by inkscape</p>
+		<ul class="actions special">
+			<li><a href="projects/drawmach" class="button">Read More</a></li>
+		</ul>
+	</article>
+	<article>
+		<header>
+			<span class="date">May 1, 2020</span>
+			<h2><a href="projects/gyro">gyroscope</h2>
+		</header>
+		<a href="projects/gyro" class="image fit"><img src="static/images/gyro/gyroscope.JPG" alt="" /></a>
+		<p>First attempt at a making a gyroscope.</p>
+		<ul class="actions special">
+			<li><a href="projects/gyro" class="button">Read More</a></li>
+		</ul>
+	</article>
+	<article>
+		<header>
+			<span class="date">March 1, 2020</span>
+			<h2><a href="projects/arm">Robotic Arm</h2>
+		</header>
+		<a href="projects/arm" class="image fit"><img src="static/images/robotarm/render_image.JPG" alt="" /></a>
+		<p>Robotic Arm with 4 Axis of freedom, powered by servo motors.</p>
+		<ul class="actions special">
+			<li><a href="projects/arm" class="button">Read More</a></li>
+		</ul>
+	</article>
+	<article>
+		<header>
+			<span class="date">July 1, 2020</span>
+			<h2><a href="projects/topologystudy">Topology Optimisation <br/>
+			simulation</a></h2>
+		</header>
+		<a href="projects/topologystudy" class="image fit"><img src="static/images/topop/topology_1.png" alt="" /></a>
+		<p>Topology optimisation of a part to remove mass to achieve the highest possible stiffness to mass ratio </p>
+		<ul class="actions special">
+			<li><a href="projects/topologystudy" class="button">Read More</a></li>
+		</ul>
+	</article>
+	<article>
+		<header>
+			<span class="date">June 28, 2020</span>
+			<h2><a href="projects/solidworksfluid">Fluid Simulations </a></h2>
+		</header>
+		<a href="projects/solidworksfluid" class="image fit"><img src="static/images/fluidsims/fan1.png" alt="" /></a>
+		<p>Fluid simulations to optimise design of fan blades for maximum flow rate, and ability for a heat exchangers to dissipate heat from a heat source.</p>
+		<ul class="actions special">
+			<li><a href="projects/solidworksfluid" class="button">Read More</a></li>
+		</ul>
+	</article>
+</section>
+
+<!-- Footer -->
+<footer>
+	<div class="pagination">
+		<!--<a href="#" class="previous">Prev</a>-->
+		<a href="#" class="page active">1</a>
+		<a href="blank" class="page">2</a>
+		<a href="blank" class="page">3</a>
+		<span class="extra">&hellip;</span>
+		<a href="blank" class="page">8</a>
+		<a href="blank" class="page">9</a>
+		<a href="blank" class="page">10</a>
+		<a href="blank" class="next">Next</a>
+	</div>
+</footer>
+
+
+{% endblock %}
+
