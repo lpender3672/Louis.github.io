@@ -5,6 +5,7 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNV06R6WQ1"></script>
+		<script type="text/javascript" src="/assets/js/LaTeXMathML.js"></script> <!-- https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html -->
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -23,7 +24,7 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
@@ -33,7 +34,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="/index.html">Projects</a></li>
+							<li class="active"><a href="/index.html#main">Projects</a></li>
 							<li><a href="/aboutme.html">About me</a></li>
 							<li><a href="/design_library.html">Design Library</a></li>
 							<!-- <li><a href="elements.html">More Information</a></li> -->
@@ -52,8 +53,25 @@
                         <article class="post featured">
                             <header class="major">
                                 <h2>Toplogy Study</h2>
-                                <p> To be uploaded</p>
+                                <p>SOLIDWORKS Simulation study of a cantilever beam to optimise stiffness to weight ratio</p>
+								<p>Powerful tool to make lighter parts for use in areospace or automotive industries where difficult to manufacture, shape optimisied, light weight parts are required</p>
                             </header>
+							
+							<p> The initial forces and fixtures are defined on a part. A plane of symmetry is also defined to reduce computation time. Manufacturing constraints have also been defined around each bolt hole for threadding tolerance</p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_1.png" alt="" /></a>
+							<p> Smooth mesh produced from simulation results. Below image is 40% mass where deflection is below required limit</p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_2.png" alt="" /></a>
+							<p> Image below shows part of which its design is inspired by the topology optimisation shown above</p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_3.png" alt="" /></a>
+							<p> Below shows simulation study of first iteration of the toplogy optimised part. The deflection is over the required limit and so the design must be changed.</p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_4.png" alt="" /></a>
+							<p> Below shows the second iteration of the designed part inspired by the topology optimised part </p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_5.png" alt="" /></a>
+							<p> The simulation results shown below is under the required limit of deflection and so this is the final design of the cantilever</p>
+							<img style='height: 100%; width: 50%; object-fit: contain' src="/assets/images/topop/topology_6.png" alt="" /></a>
+							<p> Further iterations could be done to further decrease mass of the part however, this will not be necessary as this is just an example study</p>
+
+							<p> This is a powerful tool that greatly accelerates the design process for parts requiring high stiffness to mass ratio</p>
 
                         </article>
 					</div>
