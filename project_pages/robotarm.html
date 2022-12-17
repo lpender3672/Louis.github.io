@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNV06R6WQ1"></script>
+		<script type="text/javascript" src="/assets/js/LaTeXMathML.js"></script> <!-- https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html -->
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-QNV06R6WQ1');
+		</script>
+
+		<title>Pender Designs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/index.html" class="logo">Pender Designs</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="/index.html#main" style="text-decoration:none">Projects</a></li>
+							<li><a href="/design_library.html" style="text-decoration:none">Design Library</a></li>
+							<li><a href="/aboutme.html" style="text-decoration:none">My Journey</a></li>
+							<li><a href="/setup.html" style="text-decoration:none">My Setup</a></li>
+
+							<!-- <li><a href="elements.html">More Information</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>  -->
+							<!--  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>  -->
+							<li><a href="https://www.instagram.com/penderdesigns/?hl=en" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/lpender3672" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/louis-pender-5a723b1a1/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <article class="post featured">
+                            <header class="major">
+								<span class="date">March, 2020</span>
+                                <h2>Robotic Arm</h2>
+                                <p> Robotic Arm with 5 degrees of freedom, powered by servo motors.</p>
+                            </header>
+
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/render_image.JPG" alt="" /></a>
+
+							<p>
+								This is a 3D printed robotic arm that I designed and built. It is controlled by an Arduino and can be programmed to move to any position in 3D space.
+								The arm is made up of 5 links, each with a servo motor attached to it. The servo motors are controlled by an Arduino Uno and the code is written in C++.
+								The arm can be programmed to move to any position in 3D space by inputting the desired x, y, and z coordinates.
+								The angle of approach of the arm can also be specified, which is the angle between the end effector and the x-axis.
+							</p>
+							<video style='height: 100%; width: 80%; object-fit: contain' controls>
+                                <source src="/assets/images/robotarm/rendered rotate around point.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/robotarm_assembly1.jpg" alt="" /></a>
+
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/robotarm_assembly2.jpg" alt="" /></a>
+
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/robotarm_assembled.jpg" alt="" /></a>
+
+							<p> The inverse kinematic equations were solved for by hand using geometry and were programmed into an Arduino to control the robot.
+								Here they are shown in the SOLIDWORKS equation editor:
+							</p>
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/eq.png" alt="" /></a>
+							<p> Here the the labelled angles on the sketch</p>
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/labels.png" alt="" /></a>
+							<img style='height: 100%; width: 80%; object-fit: contain' src="/assets/images/robotarm/labels2.png" alt="" /></a>
+
+							<p>
+								The base servo isnt strong enough to move the arm so I helped by giving it a bit of support, otherwise the arm can sag below its target position and stall the servo.
+								Videos of the arm in action:
+							</p>
+
+							<video style='height: 100%; width: 80%; object-fit: contain' controls>
+                                <source src="/assets/images/robotarm/linear_motion.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+							
+							<video style='height: 100%; width: 80%; object-fit: contain' controls>
+                                <source src="/assets/images/robotarm/rotate_about_point.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+
+							<p>
+								If I were to re-visit the project I would use more accurate and higher torque stepper motors, however I did not know about them at the time, nor did I have the budget to buy them.
+							</p>
+                        </article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="https://formsubmit.co/louispender3672@gmail.com">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto: louis@penderdesigns.com">louis@penderdesigns.com</a></p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel: +44 7488318744">+44 7488318744</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>  -->
+									<!--  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>  -->
+									<li><a href="https://www.instagram.com/penderdesigns/?hl=en" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/lpender3672" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/louis-pender-5a723b1a1/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; PenderDesigns</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
